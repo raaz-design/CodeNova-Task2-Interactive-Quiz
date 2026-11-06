@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "category": "HTML & Semantics",
+    "question": "Which HTML element is most appropriate for the primary navigation links?",
+    "options": [
+      "<div>",
+      "<nav>",
+      "<aside>",
+      "<span>"
+    ],
+    "answerIndex": 1,
+    "explanation": "The <nav> element identifies a major block of navigation links."
+  },
+  {
+    "id": 2,
+    "category": "HTML & Semantics",
+    "question": "Which attribute gives an image a text alternative for screen readers?",
+    "options": [
+      "title",
+      "caption",
+      "alt",
+      "description"
+    ],
+    "answerIndex": 2,
+    "explanation": "The alt attribute provides a text alternative for an image."
+  },
+  {
+    "id": 3,
+    "category": "CSS & Layout",
+    "question": "Which CSS layout system is designed for two-dimensional rows and columns?",
+    "options": [
+      "Flexbox",
+      "Grid",
+      "Float",
+      "Inline-block"
+    ],
+    "answerIndex": 1,
+    "explanation": "CSS Grid handles both rows and columns, making it ideal for two-dimensional layouts."
+  },
+  {
+    "id": 4,
+    "category": "CSS & Layout",
+    "question": "What does box-sizing: border-box change?",
+    "options": [
+      "It hides borders",
+      "It includes padding and borders within the declared width",
+      "It makes elements square",
+      "It removes margins"
+    ],
+    "answerIndex": 1,
+    "explanation": "With border-box, width and height include padding and borders."
+  },
+  {
+    "id": 5,
+    "category": "CSS & Layout",
+    "question": "Which media query targets viewports 600px wide or narrower?",
+    "options": [
+      "@media (min-width: 600px)",
+      "@media (max-width: 600px)",
+      "@media (width > 600px)",
+      "@media screen 600px"
+    ],
+    "answerIndex": 1,
+    "explanation": "max-width: 600px applies when the viewport is 600px or less."
+  },
+  {
+    "id": 6,
+    "category": "JavaScript",
+    "question": "Which keyword declares a block-scoped variable that can be reassigned?",
+    "options": [
+      "const",
+      "var",
+      "let",
+      "static"
+    ],
+    "answerIndex": 2,
+    "explanation": "let is block-scoped and can be reassigned; const cannot be reassigned."
+  },
+  {
+    "id": 7,
+    "category": "JavaScript",
+    "question": "Which method creates a new array by transforming each element?",
+    "options": [
+      "forEach()",
+      "filter()",
+      "map()",
+      "find()"
+    ],
+    "answerIndex": 2,
+    "explanation": "map() returns a new array containing the transformed elements."
+  },
+  {
+    "id": 8,
+    "category": "DOM & Events",
+    "question": "Which method selects the first element matching a CSS selector?",
+    "options": [
+      "document.querySelector()",
+      "document.getElementsByTagName()",
+      "document.querySelectorAll()",
+      "document.createElement()"
+    ],
+    "answerIndex": 0,
+    "explanation": "querySelector() returns the first matching element, or null."
+  },
+  {
+    "id": 9,
+    "category": "DOM & Events",
+    "question": "What does event.preventDefault() do?",
+    "options": [
+      "Stops all JavaScript",
+      "Cancels an event’s default browser action when cancelable",
+      "Deletes the event target",
+      "Removes every event listener"
+    ],
+    "answerIndex": 1,
+    "explanation": "preventDefault() stops the browser’s default action, such as form submission, when the event is cancelable."
+  },
+  {
+    "id": 10,
+    "category": "Accessibility",
+    "question": "Why should buttons use the native <button> element?",
+    "options": [
+      "It always looks better",
+      "It is faster to load",
+      "It supports keyboard interaction and semantics by default",
+      "It prevents clicks"
+    ],
+    "answerIndex": 2,
+    "explanation": "Native buttons provide keyboard support and accessible semantics without recreating them manually."
+  },
+  {
+    "id": 11,
+    "category": "Accessibility",
+    "question": "What does aria-live=\"polite\" help announce?",
+    "options": [
+      "CSS transitions",
+      "Dynamic content updates to assistive technology",
+      "Images in a carousel",
+      "Browser history"
+    ],
+    "answerIndex": 1,
+    "explanation": "An aria-live region can announce updated feedback without moving keyboard focus."
+  },
+  {
+    "id": 12,
+    "category": "Web Fundamentals",
+    "question": "What is the purpose of a JSON file in this quiz?",
+    "options": [
+      "To style the page",
+      "To store structured question data",
+      "To compile JavaScript",
+      "To host the website"
+    ],
+    "answerIndex": 1,
+    "explanation": "JSON stores structured data such as question text, answer options and explanations."
+  }
+]

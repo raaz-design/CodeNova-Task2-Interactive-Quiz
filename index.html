@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10142a">
+  <meta name="description" content="A polished, accessible frontend fundamentals quiz with instant feedback and progress tracking.">
+  <title>NEON//KNOW — Interactive Frontend Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to quiz</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="Neon Know home"><span class="brand-mark" aria-hidden="true">N<span>✦</span></span><span>NEON<em>//</em>KNOW</span></a>
+    <div class="header-right"><span class="header-label">A LITTLE KNOWLEDGE. A LOT OF ENERGY.</span><span class="edition">FRONTEND CHALLENGE / 01</span></div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> READY TO LEVEL UP?</p>
+        <h1 id="page-title">Think fast.<br><span>Code smarter.</span></h1>
+        <p class="intro-copy">A playful frontend knowledge challenge. Twelve questions, instant feedback, and a fresh shot whenever you want one.</p>
+        <div class="hero-actions"><button type="button" class="button button-dark" id="open-quiz">Start the quiz <span aria-hidden="true">↗</span></button><span class="hero-meta">12 QUESTIONS · NO TIMER · ALL YOU</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><div class="art-core">?</div><span class="art-star">✳</span><span class="art-label">YOUR BRAIN<br>IS THE MAIN<br>CHARACTER.</span></div>
+    </section>
+    <dialog id="quiz-dialog" class="quiz-dialog" aria-label="Interactive quiz"><div class="dialog-toolbar"><span>NEON//KNOW · QUIZ MODE</span><button type="button" id="close-quiz" class="close-quiz" aria-label="Close quiz">×</button></div><section class="workspace" aria-label="Quiz questions">
+      <aside class="side-panel">
+        <div><p class="panel-kicker">YOUR SESSION</p><h2>Your brain.<br>Your rules.</h2><p class="panel-copy">No countdown. No stress. Just you versus twelve bite-sized frontend questions.</p></div>
+        <div class="side-bottom"><div class="stat"><span>QUESTIONS</span><strong id="total-count">12</strong></div><div class="stat"><span>CURRENT SCORE</span><strong id="sidebar-score">00</strong></div><div class="mini-rule"></div><p>Designed & built with HTML, CSS and JavaScript.</p></div>
+      </aside>
+      <div class="quiz-panel" id="quiz-panel">
+        <div id="loading-screen" class="screen centered" role="status"><div class="spinner" aria-hidden="true"></div><p>Preparing your questions…</p></div>
+        <div id="error-screen" class="screen centered" hidden><span class="state-symbol">!</span><h2>We couldn't load the questions.</h2><p>Make sure you are running this project using Live Server and that <code>questions.json</code> is beside <code>index.html</code>.</p><button class="button button-dark" id="retry-button" type="button">Try again <span aria-hidden="true">↗</span></button></div>
+        <div id="start-screen" class="screen start-screen" hidden><div class="start-top"><span class="pill">READY WHEN YOU ARE</span><span class="start-icon" aria-hidden="true">✳</span></div><div class="start-main"><p class="eyebrow">THE FRONTEND EDITION</p><h2>Ready, set,<br><em>think!</em></h2><p>Explore HTML, CSS, JavaScript, DOM interactions and accessibility. Each answer comes with an explanation so you leave knowing a little more.</p><div class="detail-chips"><span>12 questions</span><span>Multiple choice</span><span>Instant feedback</span></div></div><button id="start-button" class="button button-dark button-wide" type="button">Let’s go! <span aria-hidden="true">↗</span></button></div>
+        <div id="question-screen" class="screen question-screen" hidden>
+          <div class="question-meta"><span class="pill" id="category-label">CATEGORY</span><span class="question-counter">QUESTION <strong id="question-number">01</strong> / <span id="question-total">12</span></span></div>
+          <div class="progress-track" id="progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="12" aria-valuenow="0"><div class="progress-fill" id="progress-fill"></div></div>
+          <h2 id="question-text" tabindex="-1"></h2><p class="choose-label">SELECT ONE ANSWER</p>
+          <div id="answers" class="answers" role="group" aria-label="Answer choices"></div>
+          <div id="feedback" class="feedback" role="status" aria-live="polite" hidden><div class="feedback-heading" id="feedback-heading"></div><p id="feedback-explanation"></p></div>
+          <div class="question-footer"><span id="question-hint">Choose an option to continue.</span><button id="next-button" class="button button-dark" type="button" hidden>Next question <span aria-hidden="true">↗</span></button></div>
+        </div>
+        <div id="result-screen" class="screen result-screen" hidden><span class="pill">QUIZ COMPLETE</span><p class="eyebrow result-eyebrow">YOUR FINAL RESULT</p><div class="result-score"><strong id="result-score">0</strong><span id="result-total">/ 12</span></div><h2 id="result-title">Nicely done.</h2><p id="result-message"></p><div class="result-meter" aria-label="Final percentage"><div id="result-meter-fill"></div></div><div class="result-stats"><div><span>CORRECT</span><strong id="correct-count">0</strong></div><div><span>TO REVIEW</span><strong id="incorrect-count">0</strong></div><div><span>ACCURACY</span><strong id="accuracy">0%</strong></div></div><button id="restart-button" class="button button-dark button-wide" type="button">Try again <span aria-hidden="true">↻</span></button></div>
+      </div>
+    </section>
+  </dialog>
+    <section class="bottom-note"><span>01 / PRACTICE MAKES PROGRESS</span><p>Good questions make great developers. Keep going.</p><span aria-hidden="true">✳</span></section>
+  </main>
+  <footer class="site-footer wrap"><span>NEON//KNOW © <span id="year">2026</span></span><span>CODED WITH CURIOSITY · CODENOVA TASK 02</span></footer>
+</body>
+</html>
